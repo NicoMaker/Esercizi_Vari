@@ -1,4 +1,4 @@
-[vai al file principale](../../README.md))
+[vai al file principale](../../README.md)
 
 # Esercizi
 
