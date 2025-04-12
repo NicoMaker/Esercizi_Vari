@@ -2,4 +2,4 @@
 
 ## Lezioni
 
-- [Lezione 1](Lezioni/Readme.md))
+- [Lezione 1](Lezioni/1_Lezione/Readme.md)
