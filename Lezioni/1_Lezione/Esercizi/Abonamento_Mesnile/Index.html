@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Specifica il set di caratteri da usare per il documento -->
     <meta charset="UTF-8" />
+    <!-- Imposta la viewport per garantire che il sito sia responsive su dispositivi mobili -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titolo della pagina che appare nella scheda del browser -->
     <title>Document</title>
-
   </head>
   <body>
-    <h1>Calcolo costo abonamento</h1>
-    <!--  inserimento mesi in input  con il tipo number -->
+    <!-- Titolo principale della pagina -->
+    <h1>Calcolo costo abbonamento</h1>
+
+    <!-- Campo di input per inserire il numero di mesi. Il tipo 'number' permette solo numeri -->
     <input type="number" id="mesi" />
 
+    <!-- Bottone che, quando cliccato, avvia il calcolo -->
     <button id="calcola_mesi">Calcola</button>
+
+    <!-- Paragrafo che mostrerà il risultato del calcolo -->
     <p id="risultato"></p>
 
+    <!-- Include il file JavaScript esterno per eseguire il calcolo -->
     <script src="script2.js"></script>
   </body>
 </html>

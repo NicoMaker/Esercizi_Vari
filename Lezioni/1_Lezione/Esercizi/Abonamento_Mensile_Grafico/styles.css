@@ -1,3 +1,4 @@
+/* Reset di base per margini, padding e box-sizing */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Corpo della pagina: sfondo chiaro, font scuro, allineamento al centro */
 body {
   background-color: #f5f7fa;
   color: #333;
@@ -16,12 +18,14 @@ body {
   align-items: center;
 }
 
+/* Contenitore principale che si adatta alla larghezza */
 .container {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
 
+/* Stile base della card: bordi arrotondati, ombra e transizione per hover */
 .card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -30,11 +34,13 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Effetto hover sulla card: sollevamento e ombra più marcata */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* Header della card: gradient di colore, testo bianco e padding */
 .card-header {
   background: linear-gradient(135deg, #4361ee, #4895ef);
   color: white;
@@ -42,24 +48,29 @@ body {
   text-align: center;
 }
 
+/* Stile del titolo nella card */
 .card-header h1 {
   font-size: 28px;
   margin-bottom: 10px;
 }
 
+/* Sottotitolo con opacità ridotta e font più piccolo */
 .subtitle {
   opacity: 0.8;
   font-size: 16px;
 }
 
+/* Corpo della card: padding per contenuti interni */
 .card-body {
   padding: 30px;
 }
 
+/* Gruppo di input: margine inferiore per separazione */
 .input-group {
   margin-bottom: 30px;
 }
 
+/* Etichetta dell'input: font più spesso e colorazione scura */
 .input-group label {
   display: block;
   margin-bottom: 10px;
@@ -67,11 +78,13 @@ body {
   color: #333;
 }
 
+/* Wrapper per gli input: disposizione in riga con spazio tra gli elementi */
 .input-wrapper {
   display: flex;
   gap: 10px;
 }
 
+/* Stile dell'input numerico: padding, bordi arrotondati e effetto focus */
 input[type="number"] {
   flex: 1;
   padding: 12px 15px;
@@ -81,12 +94,14 @@ input[type="number"] {
   transition: all 0.3s ease;
 }
 
+/* Effetto focus sugli input: bordi blu e ombra */
 input[type="number"]:focus {
   border-color: #4361ee;
   outline: none;
   box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
 }
 
+/* Pulsante: colore di sfondo, padding, bordi arrotondati e effetto hover */
 button {
   background-color: #4361ee;
   color: white;
@@ -99,15 +114,18 @@ button {
   transition: all 0.3s ease;
 }
 
+/* Effetto hover sul pulsante: cambio di colore e spostamento */
 button:hover {
   background-color: #3f37c9;
   transform: translateY(-2px);
 }
 
+/* Effetto attivo sul pulsante: ritorno a posizione originale */
 button:active {
   transform: translateY(0);
 }
 
+/* Contenitore delle informazioni sul prezzo: disposizione flessibile e separazione */
 .pricing-info {
   display: flex;
   justify-content: space-between;
@@ -116,6 +134,7 @@ button:active {
   gap: 15px;
 }
 
+/* Singolo elemento di prezzo: stili per background, bordi e transizioni */
 .pricing-item {
   flex: 1;
   min-width: 150px;
@@ -127,11 +146,13 @@ button:active {
   border: 2px solid transparent;
 }
 
+/* Effetto hover sugli elementi di prezzo: cambio di bordi e spostamento */
 .pricing-item:hover {
   border-color: #4895ef;
   transform: translateY(-5px);
 }
 
+/* Badge di prezzo: stile di colore, padding e bordi arrotondati */
 .pricing-badge {
   background-color: #4895ef;
   color: white;
@@ -142,55 +163,65 @@ button:active {
   margin-bottom: 10px;
 }
 
+/* Valore del prezzo: grandezza e colore evidenziato */
 .pricing-value {
   font-size: 28px;
   font-weight: 700;
   color: #3f37c9;
 }
 
+/* Etichetta del prezzo: colore più chiaro per distinguere */
 .pricing-label {
   color: #666;
   font-size: 14px;
 }
 
+/* Contenitore dei risultati: nascosto di default */
 .result-container {
   margin-top: 30px;
   display: none;
 }
 
+/* Titolo dei risultati: colorazione e allineamento */
 .result-container h2 {
   margin-bottom: 20px;
   color: #3f37c9;
   text-align: center;
 }
 
+/* Contenitore della tabella: scroll orizzontale e bordi arrotondati */
 .table-container {
   overflow-x: auto;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
+/* Stile della tabella: larghezza piena, bordi e allineamento */
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
 }
 
+/* Stile dell'head della tabella: sfondo blu e testo bianco */
 thead {
   background-color: #4361ee;
   color: white;
 }
 
+/* Padding per celle e bordi inferiori */
 th,
 td {
   padding: 15px;
   border-bottom: 1px solid #e1e5ee;
 }
 
+/* Hover sulle righe della tabella: colore di sfondo chiaro */
 tbody tr:hover {
   background-color: #f8f9fa;
 }
 
+/* Stile del footer della tabella: testo in grassetto e bordi */
 tfoot {
   font-weight: 700;
   background-color: #f8f9fa;
@@ -200,11 +231,13 @@ tfoot td {
   border-top: 2px solid #4361ee;
 }
 
+/* Totale complessivo in colore rosa per evidenza */
 #totale-complessivo {
   color: #f72585;
   font-size: 18px;
 }
 
+/* Messaggio di errore: colore rosso e allineamento centrato */
 .error-message {
   color: #f72585;
   margin-top: 15px;
@@ -213,6 +246,7 @@ tfoot td {
   min-height: 24px;
 }
 
+/* Footer della card: stile del testo, colore chiaro e padding */
 .card-footer {
   background-color: #f8f9fa;
   padding: 20px;
@@ -222,6 +256,7 @@ tfoot td {
   border-top: 1px solid #e1e5ee;
 }
 
+/* Elementi di prezzo attivi: bordo e ombra blu */
 .active-pricing {
   border-color: #4361ee;
   border-width: 2px;
@@ -229,7 +264,7 @@ tfoot td {
   box-shadow: 0 5px 15px rgba(67, 97, 238, 0.2);
 }
 
-/* Responsive */
+/* Stili responsivi: modifica disposizione per schermi più piccoli */
 @media (max-width: 768px) {
   .pricing-info {
     flex-direction: column;
