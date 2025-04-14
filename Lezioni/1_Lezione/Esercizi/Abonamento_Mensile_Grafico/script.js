@@ -24,16 +24,28 @@ document.addEventListener("DOMContentLoaded", function () {
     "Dicembre",
   ];
 
+  // Prezzi per le fasce (in €)
+  const prezzi = {
+    "1-3": 30,
+    "4-6": 25,
+    "7-12": 20,
+  };
+
   // Funzione per calcolare il costo mensile
   function calcolaCostoMensile(mese) {
     if (mese <= 3) {
-      return 30;
+      return prezzi["1-3"];
     } else if (mese <= 6) {
-      return 25;
+      return prezzi["4-6"];
     } else {
-      return 20;
+      return prezzi["7-12"];
     }
   }
+
+  // Imposta i prezzi nella parte grafica
+  document.getElementById("price-1-3").textContent = `${prezzi["1-3"]}€`;
+  document.getElementById("price-4-6").textContent = `${prezzi["4-6"]}€`;
+  document.getElementById("price-7-12").textContent = `${prezzi["7-12"]}€`;
 
   // Event listener per il pulsante di calcolo
   button.addEventListener("click", function () {
